@@ -1,0 +1,294 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2, h3 {
+    margin-bottom: 10px;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header img {
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #444;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: square;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* About Me Section Styling */
+#about {
+    background-color: white;
+    margin: 0;
+    line-height: 1.3;
+    border-radius: 8px;
+}
+
+#about h2 {
+    text-align: center;
+    color: #333;
+}
+
+#about ul {
+    padding-left: 5px;
+}
+
+#about ul li a {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+#about ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Portfolio Section Styling */
+#portfolio {
+    background-color: white;
+    margin: 0px;
+    line-height: 1.3;
+    border-radius: 8px;
+}
+
+#portfolio h2 {
+    text-align: center;
+}
+
+#portfolio figure {
+    text-align: center;
+}
+
+/* Skills Section Styling */
+#skills {
+    background-color: white;
+    margin: 0px;
+    border-radius: 8px;
+    line-height: 1.3;
+}
+
+#skills h2 {
+    text-align: center;
+}
+
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills li {
+    margin-bottom: 15px;
+}
+
+#skills meter {
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+}
+
+/* Contact Section Styling */
+#contact {
+    text-align: center;
+    background-color: white;
+    margin: 0px;
+    line-height: 1.3;
+    border-radius: 8px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contact input, #contact textarea {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#contact input[type="submit"] {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Upload Section Styling */
+#upload {
+    text-align: center;
+    background-color: white;
+    margin: 0px;
+    line-height: 1.3;
+    border-radius: 8px;
+}
+
+#upload form {
+    display: flex;
+    flex-direction: column;
+}
+
+#upload input[type="file"] {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#upload input[type="submit"] {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 1px 2px;
+}
+
+#upload input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Questionnaire and Feedback Section Styling */
+#questionnaire, #feedback {
+    text-align: center;
+    background-color: white;
+    margin: 0px;
+    line-height: 1.3;
+    border-radius: 8px;
+}
+
+form input[type="radio"], form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Add Me Section Styling */
+#add-me {
+    text-align: center;
+    background-color: #f4f4f4;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+/* Links and Icons */
+#add-me a {
+    display: inline-block;
+    margin: 10px;
+}
+
+#add-me a img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for icons */
+#add-me a img:hover {
+    transform: scale(1.1); /* Enlarges the icons slightly on hover */
+}
+
+/* Details section style */
+details {
+    margin-top: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+details summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+}
+/* Footer Section Styling */
+footer {
+    background-color: #333;
+    padding:8px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+html { 
+    scroll-behavior:smooth;
+}
+
+/* Custom Arrows for Details and Summary */
+details summary {
+    list-style: none; /* Removes default arrow */
+    -webkit-appearance: none; /* For Webkit browsers (Chrome, Safari) */
+    -moz-appearance: none; /* For Firefox */
+    padding-left: 25px; /* Space for the custom arrow */
+    cursor: pointer; /* Make sure the summary is clickable */
+    position: relative;
+}
+
+/* Custom arrow icon before the summary text */
+details summary::before {
+    content: "▶"; /* Right arrow symbol */
+    position: absolute;
+    left: 0;
+    font-size: 18px; /* Size of the arrow */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Change the arrow direction when the details are open */
+details[open] summary::before {
+    transform: rotate(90deg); /* Rotate to point down */
+    content: "▼"; /* Change to down arrow */
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <script src="script.js"></script>
+
+<!-- Header Section -->
+<header>
+    <h1 style="color:blue; text-aglin: center;">John Doe</h1>
+    <p>Web Developer | Designer | Content Creator</p>
+    <a href="https://www.linkedin.com/in/johndoe" target="_blank">
+        VISIT MY PAGE<br>
+        <img src="https://images.unsplash.com/photo-1604013714443-6e07b2a056c5" alt="John Doe Profile Picture" width="100" height="100">
+    </a>
+</header>
+
+<!-- Navigation Bar -->
+<nav>
+    <ul>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+    </ul>
+</nav>
+
+<!-- About Me Section (Contains audio, video, and YouTube iframe) -->
+<details id="about">
+    <summary><h2><strong><u>About Me</u></strong></h2></summary>
+    <p>Hi! I'm John, a passionate web developer with a love for creating <mark>beautiful and responsive websites</mark>. I specialize in front-end development using HTML, CSS, and JavaScript.</p>
+
+    <h3>Check Out My Portfolio</h3>
+    <ul>
+        <li><a href="#portfolio">Visit My Portfolio</a></li>
+        <li><a href="#related-articles">Read Related Articles</a></li>
+    </ul>
+
+    <!-- Audio -->
+    <h3>Listen to My Introduction</h3>
+    <ul>
+    	<li><a href="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3" target="_blank">Listen to My Introduction (Audio)</a></li>
+    	<li><a href="https://www.example.com/path/to/portfolio-video.mp4" type="video/mp4" target="_blank">Watch My Portfolio Video (Video)</a></li>
+    	<li><a href="https://www.youtube.com/embed/dQw4w9WgXcQ" target="_blank">Watch My Portfolio Video on YouTube</a></li>
+    </ul>
+
+   
+ <!-- Related Articles Section -->
+    <aside id="related-articles">
+        <details>
+            <summary><h3>Related Articles</h3></summary>
+            <ul>
+                <li><a href="#">How to Build a Website</a></li>
+                <li><a href="#">Understanding CSS Flexbox</a></li>
+                <li><a href="#">Web Accessibility Tips</a></li>
+            </ul>
+        </details>
+    </aside>
+</details>
+
+<!-- Portfolio Section -->
+<details id="portfolio">
+    <summary><h2><u>My Portfolio</u></strong></h2></summary>
+    <p>This is where you can check out my web development projects:</p>
+    <figure>
+        <img src="project1.jpg" alt="E-commerce Website">
+        <figcaption>E-commerce Website Project</figcaption>
+    </figure>
+    <ul>
+        <li><a href="https://www.example.com/portfolio-project-1" target="_blank">Project 1: E-Commerce Website</a></li>
+        <li><a href="https://www.example.com/portfolio-project-2" target="_blank">Project 2: Personal Blog</a></li>
+    </ul>
+</details>
+
+<!-- Skills Section -->
+<details id="skills">
+    <summary><h2><u>Skills</u></strong></h2></summary>
+    <ul>
+        <li><p>HTML5 PROFECIENCY:</P>
+	<meter value="0.9" min="0" max="1">90%</meter></li>
+        <li><p>CSS3 Proficency:</p>
+	<meter value="0.8" min="0" max="1">80%</meter></li>
+        <li><p>JavaScript PROF:</p>
+	<meter value="0.7" min="0" max="1">70%</meter></li>
+    </ul>
+</details>
+
+<!-- Contact Form -->
+<details id="contact">
+    <summary><h2><u>Contact Me</u></h2></summary>
+
+    <!-- Figure added with an image -->
+    <figure>
+        <img src="your-image-url.jpg" alt="Contact Image" style="width:100%; max-width:300px;">
+        <figcaption>Feel free to reach out to me through the form below!</figcaption>
+    </figure>
+    
+    <form action="/submit" method="POST">
+        <label for="browser">Choose your browser:</label>
+        <input list="browsers" name="browser" id="browser">
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Safari">
+            <option value="Edge">
+        </datalist>
+        
+        <br>
+        
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Progress bar container (can be updated using JavaScript later) -->
+    <div id="progress-container">
+        <p>Submitting your message...</p>
+        <progress id="form-progress" value="0" max="100">0%</progress>
+    </div>
+</details>
+
+<details id="upload">
+    <summary><h2><u>Upload Files</u></h2></summary>
+    <!-- Image upload icon -->
+    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Dupload%2Bsymbol%26filters%255Bcontent_type%253Aphoto%255D%3D1%26filters%255Bcontent_type%253Aillustration%255D%3D1%26filters%255Bcontent_type%253Azip_vector%255D%3D1%26filters%255Bcontent_type%253Avideo%255D%3D1%26filters%255Bcontent_type%253Atemplate%255D%3D1%26filters%255Bcontent_type%253A3d%255D%3D1%26filters%255Bcontent_type%253Aaudio%255D%3D0%26filters%255Binclude_stock_enterprise%255D%3D0%26filters%255Bis_editorial%255D%3D0%26filters%255Bfree_collection%255D%3D0%26ca%3D0&psig=AOvVaw3ROgHVfmxrglTb2ClrXkkY&ust=1740300518607000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNj9_eTy1osDFQAAAAAdAAAAABAJ" alt="upalod image">
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="fileupload">Choose File to Upload</label><br>
+        <input type="file" id="fileupload" name="fileupload" required><br><br>
+        <input type="submit" value="Upload"><br><br>
+        <p>Submitting file/message...</p>
+        <progress id="form-progress" value="0" max="100">0%</progress>
+    </form>
+    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+    <label for="a">First Number:</label>
+    <input type="number" id="a" value="50">
+    <label for="b">Second Number:</label>
+    <input type="number" id="b" value="50">
+    = 
+    <output name="result" for="a b">100</output>
+</form>
+</details>
+<details id="questionnaire">
+    <summary><h2><u>Questionnaire</u></h2></summary>
+    <form action="/submit-questionnaire" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="age">Your Age:</label>
+        <input type="number" id="age" name="age" min="1" max="100" required><br><br>
+
+        <label>What is your favorite programming language?</label><br>
+        <input type="radio" id="html" name="language" value="HTML" required>
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="js" name="language" value="JavaScript">
+        <label for="js">JavaScript</label><br><br>
+
+        <label>Which topics are you interested in? (Check all that apply)</label><br>
+        <input type="checkbox" id="webdev" name="interests" value="Web Development">
+        <label for="webdev">Web Development</label><br>
+        <input type="checkbox" id="design" name="interests" value="Design">
+        <label for="design">Design</label><br>
+        <input type="checkbox" id="seo" name="interests" value="SEO">
+        <label for="seo">SEO</label><br><br>
+
+        <label for="feedback">Additional Comments:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" required></textarea><br><br>
+
+        <input type="submit" value="Submit Questionnaire">
+    </form>
+</details>
+<details id="feedback">
+    <summary><h2><u>Feedback Form</u></h2></summary>
+    <form action="/submit-feedback" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="rating">How would you rate our website?</label><br>
+        <input type="radio" id="excellent" name="rating" value="Excellent" required>
+        <label for="excellent">Excellent</label><br>
+        <input type="radio" id="good" name="rating" value="Good">
+        <label for="good">Good</label><br>
+        <input type="radio" id="average" name="rating" value="Average">
+        <label for="average">Average</label><br>
+        <input type="radio" id="poor" name="rating" value="Poor">
+        <label for="poor">Poor</label><br><br>
+
+        <label for="comments">Your Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" required></textarea><br><br>
+
+        <input type="submit" value="Submit Feedback">
+    </form>
+</details>
+<!-- Add Me Section -->
+<section id="add-me">
+    <h2><u>Add Me on Social Media</u></h2>
+    <p>Feel free to connect with me on the following platforms:</p>
+    
+    <a href="https://github.com/johndoe" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Logo_GitHub.svg" alt="GitHub" width="40" height="40">
+    </a>
+    <a href="https://www.linkedin.com/in/johndoe" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/LinkedIn_logo_initials.png" alt="LinkedIn" width="40" height="40">
+    </a>
+    <a href="https://twitter.com/johndoe" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Twitter_Logo_as_of_2021.svg" alt="Twitter" width="40" height="40">
+    </a>
+    <a href="https://www.instagram.com/johndoe" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram" width="40" height="40">
+    </a>
+</section>
+
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2025 John Doe. All Rights Reserved.</p>
+    <a href="https://github.com/johndoe" target="_blank">GitHub Profile</a>
+</footer>
+
+</body>
+</html>
